@@ -1,0 +1,19 @@
+ksu@ksu-VirtualBox:~$ python3 a.py 
+Enter a number for radius: 2
+Traceback (most recent call last):
+  File "a.py", line 9, in <module>
+    area = radius * radius * 3.1415962
+TypeError: can't multiply sequence by non-int of type 'str'
+
+ksu@ksu-VirtualBox:~$ python3 a.py 
+  File "a.py", line 6
+    radius = eval(input("Enter a number for radius: "))
+    ^
+IndentationError: unexpected indent
+
+ksu@ksu-VirtualBox:~$ python3 a.py 
+  File "a.py", line 12
+    print"The area for the circle of radius", radius, "is", area
+                                           ^
+SyntaxError: invalid syntax
+
